@@ -42,7 +42,7 @@ jobs:
       - name: Install Android SDK packages
         shell: bash
         run: |
-          set -euo pipefail
+          set -eu
           SDKMANAGER="$(find "$ANDROID_HOME/cmdline-tools" -type f -name sdkmanager | sort -V | tail -n 1)"
           if [ -z "$SDKMANAGER" ]; then
             echo "Android sdkmanager was not found."
