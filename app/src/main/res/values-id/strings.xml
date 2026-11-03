@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">RAFAEL CLOUDSTREAM</string>
+    <string name="play_with_app_name">Putar dengan RAFAEL CLOUDSTREAM</string>
     <string name="title_home">Beranda</string>
-    <string name="title_search">Cari</string>
+    <string name="title_search">Cari Anime</string>
     <string name="title_downloads">Unduhan</string>
     <string name="title_settings">Pengaturan</string>
+    <string name="download_queue">Antrean unduhan</string>
+    <string name="search_hint">Cari anime…</string>
+    <string name="search_hint_site">Cari %s…</string>
     <string name="download">Unduh</string>
     <string name="downloading">Mengunduh</string>
-    <string name="downloaded">Diunduh</string>
+    <string name="downloaded">Sudah diunduh</string>
     <string name="cancel">Batal</string>
     <string name="delete">Hapus</string>
     <string name="search">Cari</string>
@@ -18,4 +23,15 @@
     <string name="loading">Memuat…</string>
     <string name="go_back">Kembali</string>
     <string name="no_data">Tidak ada data</string>
+    <string name="no_update_found">Belum ada pembaruan</string>
+    <string name="check_for_update">Periksa pembaruan</string>
+    <string name="skip_update">Lewati pembaruan</string>
+    <string name="update">Perbarui</string>
+    <string name="reload_error">Coba sambungkan kembali…</string>
+    <string name="pick_source">Pilih sumber video</string>
+    <string name="pick_subtitle">Pilih subtitle</string>
+    <string name="next_episode">Episode berikutnya</string>
+    <string name="result_tags">Genre</string>
+    <string name="result_share">Bagikan</string>
+    <string name="result_open_in_browser">Buka di browser</string>
 </resources>
