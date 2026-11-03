@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_home">Beranda</string>
+    <string name="title_search">Cari</string>
+    <string name="title_downloads">Unduhan</string>
+    <string name="title_settings">Pengaturan</string>
+    <string name="download">Unduh</string>
+    <string name="downloading">Mengunduh</string>
+    <string name="downloaded">Diunduh</string>
+    <string name="cancel">Batal</string>
+    <string name="delete">Hapus</string>
+    <string name="search">Cari</string>
+    <string name="library">Pustaka</string>
+    <string name="episodes">Episode</string>
+    <string name="episode">Episode</string>
+    <string name="season">Musim</string>
+    <string name="play">Putar</string>
+    <string name="loading">Memuat…</string>
+    <string name="go_back">Kembali</string>
+    <string name="no_data">Tidak ada data</string>
+</resources>
