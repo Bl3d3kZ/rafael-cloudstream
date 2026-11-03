@@ -93,16 +93,19 @@ class CloudStreamApp : Application(), SingletonImageLoader.Factory {
                 "PREBUILT_REPOSITORIES",
                 arrayOf(
                     RepositoryData(
+                        iconUrl = null,
                         name = "AnimeX",
                         url = "https://raw.githubusercontent.com/HatsuneMikuUwU/AnimeX/refs/heads/master/repo.json",
                         description = "Koleksi ekstensi anime dan donghua Indonesia"
                     ),
                     RepositoryData(
+                        iconUrl = null,
                         name = "OCE",
                         url = "https://raw.githubusercontent.com/byimam2nd/oce/master/repo.json",
                         description = "Repository ekstensi CloudStream"
                     ),
                     RepositoryData(
+                        iconUrl = null,
                         name = "TheAlyss",
                         url = "https://raw.githubusercontent.com/TheAlyss/cloudstream-AlyssRepo/builds/repo.json",
                         description = "Repository ekstensi CloudStream"
