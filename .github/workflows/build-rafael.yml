@@ -51,7 +51,7 @@ jobs:
           # Install only the SDK packages required by this build.
           # Do not run --licenses globally: it also lists unrelated emulator
           # image licenses (including MIPS evaluation terms).
-          "$SDKMANAGER" --install "platforms;android-37" "platform-tools" <<'SDK_LICENSE_INPUT'
+          "$SDKMANAGER" --install "platforms;android-36" "platform-tools" <<'SDK_LICENSE_INPUT'
           y
           y
           y
