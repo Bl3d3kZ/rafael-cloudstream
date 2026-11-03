@@ -51,7 +51,7 @@ jobs:
           # Install only the SDK packages required by this build.
           # Do not run --licenses globally: it also lists unrelated emulator
           # image licenses (including MIPS evaluation terms).
-          "$SDKMANAGER" --install "platforms;android-36" "platform-tools" <<'SDK_LICENSE_INPUT'
+          "$SDKMANAGER" --install "platforms;android-37.0" "platform-tools" <<'SDK_LICENSE_INPUT'
           y
           y
           y
@@ -73,6 +73,15 @@ jobs:
           y
           y
           SDK_LICENSE_INPUT
+
+      - name: Normalize Android 37 SDK platform directory for AGP
+        shell: bash
+        run: |
+          set -eu
+          if [ -d "$ANDROID_HOME/platforms/android-37.0" ] && [ ! -e "$ANDROID_HOME/platforms/android-37" ]; then
+            ln -s android-37.0 "$ANDROID_HOME/platforms/android-37"
+          fi
+          test -f "$ANDROID_HOME/platforms/android-37/android.jar"
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
