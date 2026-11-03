@@ -17,6 +17,7 @@ import com.lagradost.cloudstream3.BuildConfig
 import com.lagradost.cloudstream3.mvvm.safe
 import com.lagradost.cloudstream3.mvvm.safeAsync
 import com.lagradost.cloudstream3.plugins.PluginManager
+import com.lagradost.cloudstream3.ui.settings.extensions.RepositoryData
 import com.lagradost.cloudstream3.ui.settings.Globals.EMULATOR
 import com.lagradost.cloudstream3.ui.settings.Globals.TV
 import com.lagradost.cloudstream3.ui.settings.Globals.isLayout
@@ -84,6 +85,31 @@ class CloudStreamApp : Application(), SingletonImageLoader.Factory {
         }
 
         AppDebug.isDebug = BuildConfig.DEBUG
+
+        // Keep Rafael's trusted extension repositories available on first launch.
+        // Preserve an existing value so future user or app configuration is not overwritten.
+        if (getKey<Array<RepositoryData>>("PREBUILT_REPOSITORIES") == null) {
+            setKey(
+                "PREBUILT_REPOSITORIES",
+                arrayOf(
+                    RepositoryData(
+                        name = "AnimeX",
+                        url = "https://raw.githubusercontent.com/HatsuneMikuUwU/AnimeX/refs/heads/master/repo.json",
+                        description = "Koleksi ekstensi anime dan donghua Indonesia"
+                    ),
+                    RepositoryData(
+                        name = "OCE",
+                        url = "https://raw.githubusercontent.com/byimam2nd/oce/master/repo.json",
+                        description = "Repository ekstensi CloudStream"
+                    ),
+                    RepositoryData(
+                        name = "TheAlyss",
+                        url = "https://raw.githubusercontent.com/TheAlyss/cloudstream-AlyssRepo/builds/repo.json",
+                        description = "Repository ekstensi CloudStream"
+                    )
+                )
+            )
+        }
     }
 
     override fun attachBaseContext(base: Context?) {
